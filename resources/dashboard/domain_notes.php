@@ -67,20 +67,20 @@ $text = $language->get($settings->get('domain', 'language', 'en-us'), 'core/user
 //set the rows to alternate shading background
 $c = 0;
 $row_style = [];
-$row_style[$c] = "row_style0";
-$row_style[!$c] = "row_style1";
+$row_style[0] = "row_style0";
+$row_style[1] = "row_style1";
 
 echo "<div class='hud_box' style='cursor: default;'>\n";
 echo "	<form id='form_note' name='form_note'>\n";
 echo "		<div class='panel panel-default'>\n";
 echo "			<span class='hud_title'>$widget_name</span>\n";
 echo "			<div class='panel-body' style='padding-left: 5px; padding-right: 5px; padding-bottom: 5px;'>\n";
-echo "				<textarea name='domain_note' id='domain_note' class='form-control' rows='5' style='resize: none; border: none;'>$domain_note</textarea>\n";
+echo "				<textarea name='domain_note' id='domain_note' class='form-control' rows='5' style='resize: none; border: 1px solid #ddd;'>$domain_note</textarea>\n";
 echo "			</div>\n";
 echo "			<div id='note_status_bar' class='panel-footer' style='position: relative;'>\n";
-echo "			    <span id='note_status' style='float:left; display:inline-block; line-height: 36px;'></span>\n";
+echo "			    <span id='note_status' style='float:left; display:inline-block; line-height: 36px; padding-left: 10px; padding-top: 3px;'></span>\n";
 if ($has_domain_note_edit) {
-    echo "			<span style='float:right;'>\n";
+    echo "			<span style='float:right; padding-right: 3px; padding-bottom: 3px;'>\n";
     echo "				<button type='submit' class='btn btn-primary' value='Save'>\n";
     echo "					<i class='fas fa-save'></i> Save\n";
     echo "				</button>\n";
