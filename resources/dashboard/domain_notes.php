@@ -121,7 +121,7 @@ echo "						statusElem.style.display = 'none';\n";
 echo "						statusElem.style.opacity = '1';  // Reset to fully visible for next time\n";
 echo "					}, 3000);\n";
 echo "					// Update the textarea value with the new data (instead of innerHTML)\n";
-echo "					document.getElementById('note').value = note;\n";
+echo "					document.getElementById('domain_note').value = note;\n";
 echo "				})\n";
 echo "				.catch(error => console.error('Error:', error));\n";
 echo "	});\n";
