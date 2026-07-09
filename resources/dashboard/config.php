@@ -4,7 +4,7 @@
 $array['dashboard_widgets'][$x]['dashboard_uuid'] = '3e2cbaa4-2bec-41b2-a626-999a59b8b19c';
 $array['dashboard_widgets'][$x]['dashboard_widget_uuid'] = '3a7f0e6b-6912-4c6f-94e5-6aa564ad9205';
 $array['dashboard_widgets'][$x]['widget_name'] = 'Notes';
-$array['dashboard_widgets'][$x]['widget_path'] = '/app/domain_notes/resources/dashboard/domain_notes.php';
+$array['dashboard_widgets'][$x]['widget_path'] = 'domain_notes/domain_notes';
 $array['dashboard_widgets'][$x]['widget_icon'] = '';
 $array['dashboard_widgets'][$x]['widget_url'] = '';
 $array['dashboard_widgets'][$x]['widget_target'] = 'self';
@@ -36,4 +36,3 @@ $array['dashboard_widgets'][$x]['dashboard_widget_groups'][$y]['dashboard_uuid']
 $array['dashboard_widgets'][$x]['dashboard_widget_groups'][$y]['dashboard_widget_group_uuid'] = '73c5fd89-b627-4eb9-8ba8-fd32d23f04c9';
 $array['dashboard_widgets'][$x]['dashboard_widget_groups'][$y]['dashboard_widget_uuid'] = '3a7f0e6b-6912-4c6f-94e5-6aa564ad9205';
 $array['dashboard_widgets'][$x]['dashboard_widget_groups'][$y]['group_name'] = 'superadmin';
-$y++;
