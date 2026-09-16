@@ -44,6 +44,10 @@ if (empty($settings) || !($settings instanceof settings)) {
 	$settings = new settings(['database' => $database, $domain_uuid, $user_uuid]);
 }
 
+//get the dashboard widget background color
+$dashboard_background_color = $settings->get('theme', 'dashboard_background_color', '');
+$dashboard_number_text_color = $settings->get('theme', 'dashboard_number_text_color', '#444');
+
 //create a token
 $token = (new token())->create($_SERVER['PHP_SELF']);
 
@@ -92,6 +96,9 @@ echo "				<div style='clear:both;'></div>\n";
 echo "			</div>\n";
 echo "		</div>\n";
 echo "<script>\n";
+echo "	//set the note background to match the dashboard widget background\n";
+echo "	document.getElementById('domain_note').style.background = '" . ($dashboard_background_color[0] ?? '#ffffff') . "';\n";
+echo "	document.getElementById('domain_note').style.color = '" . $dashboard_number_text_color . "';\n";
 echo "	document.getElementById('form_note').addEventListener('submit', function (event) {\n";
 echo "		event.preventDefault();\n";
 echo "		var form = document.getElementById('form_note');\n";
